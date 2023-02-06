@@ -1,0 +1,33 @@
+{
+  "nome": "Antonino Praxedes",
+  "idade": 29,
+  "nomeCursos": [
+    "Academia do Flutter",
+    "Imersão GetX"
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Academia do Flutter",
+      "isAluno": true
+    },
+    {
+      "id": 2,
+      "nome": "Imersão GetX",
+      "isAluno": false
+    }
+  ],
+  "endereco": {
+    "rua": "Rua X",
+    "numero": "999",
+    "CEP": "0915454-999",
+    "telefone": {
+      "ddd": 95,
+      "telefone": "999995555",
+      "cidade": {
+        "id": 1,
+        "nome": "Boa Vista"
+      }
+    }
+  }
+}
