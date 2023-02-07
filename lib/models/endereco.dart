@@ -6,7 +6,7 @@ import 'package:example_api/models/telefone.dart';
 
 class Endereco {
   String rua;
-  int numero;
+  String numero;
   String cep;
   Telefone telefone;
   Cidade cidade;
@@ -32,7 +32,7 @@ class Endereco {
   factory Endereco.fromMap(Map<String, dynamic> map) {
     return Endereco(
       rua: map['rua'] ?? '',
-      numero: map['numero'] ?? 0,
+      numero: map['numero'] ?? '',
       cep: map['CEP'] ?? '',
       telefone: Telefone.fromMap(map['telefone']),
       cidade: Cidade.fromMap(map['cidade']),

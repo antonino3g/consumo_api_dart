@@ -1,11 +1,10 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 import 'package:example_api/models/curso.dart';
 import 'package:example_api/models/endereco.dart';
 
 class Aluno {
-  int id;
+  String id;
   String nome;
   int? idade;
   List<String> nomeCursos;
@@ -33,7 +32,7 @@ class Aluno {
 
   factory Aluno.fromMap(Map<String, dynamic> map) {
     return Aluno(
-      id: map['id'] ?? 0,
+      id: map['id'] ?? '',
       nome: map['nome'] ?? '',
       idade: map['idade'],
       nomeCursos: map['nomeCursos'].cast<String>(),
