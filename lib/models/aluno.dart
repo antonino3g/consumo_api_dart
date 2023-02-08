@@ -4,7 +4,7 @@ import 'package:example_api/models/curso.dart';
 import 'package:example_api/models/endereco.dart';
 
 class Aluno {
-  String id;
+  String? id;
   String nome;
   int? idade;
   List<String> nomeCursos;
@@ -12,7 +12,7 @@ class Aluno {
   List<Curso> cursos;
 
   Aluno(
-      {required this.id,
+      {this.id,
       required this.nome,
       this.idade,
       required this.nomeCursos,
@@ -32,7 +32,7 @@ class Aluno {
 
   factory Aluno.fromMap(Map<String, dynamic> map) {
     return Aluno(
-      id: map['id'] ?? '',
+      id: map['id'],
       nome: map['nome'] ?? '',
       idade: map['idade'],
       nomeCursos: map['nomeCursos'].cast<String>(),
